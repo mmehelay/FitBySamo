@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Personal Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;700&family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dark.css">
+  <link rel="icon" type="image/png" href="images/Favicon.png"/>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/FitsbysamoBLK-removebg-preview.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="about.html" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Packages
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="solo.html" class="cs-li-link cs-drop-link">1 on 1 Training</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="personalized.html" class="cs-li-link cs-drop-link">Personalized Program Packages</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="functional-mobility.html" class="cs-li-link cs-drop-link">Functional Mobility Training</a>
+                            </li>
+                         
+                         
+                           
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="mobility.html" class="cs-li-link">
+                            Mobility Training
+                        </a>
+                    </li>
+                      <li class="cs-li">
+                        <a href="contact.html" class="cs-li-link">
+                           Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Book Now</a>
+       <!--Dark Mode toggle-->
+<!-- Place at the bottom of your container that wraps around your <nav> navigation list -->
+<!-- If there is no container wrapping your <nav>, add one.  This should NOT be placed inside the navigation list -->
+<button id="dark-mode-toggle">
+    <!--Moon is an inline SVG so you can edit the color if needed-->
+    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/sun.svg" decoding="async" alt="sun" width="15" height="15">
+</button>
+                                
+    </div>
+</header>
+                                
+
+
+
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-855">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Unlock Your Better You</span>
+            <h1 class="cs-title">Physical Therapy & Health and Wellness</h1>
+            <p class="cs-text">
+                Embark on a transformative journey to become your best self with Sam's personalized training programs. Whether you're in Toronto or anywhere else, Sam's expertise and guidance will empower you to achieve your fitness goals. Discover the joy of functional strength training and embrace a healthier lifestyle that's tailored to your unique needs and aspirations.
+            </p>
+            <a href="" class="cs-button-solid">Book A Free Consultation</a>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" srcset="images/IMG_8417.JPEG">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" srcset="images/IMG_8417.JPEG">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" srcset="images/IMG_8417.JPEG">
+            <img aria-hidden="true" decoding="async" src="images/IMG_8417.JPEG" alt="therapy" width="570" height="701">
+            </picture>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
+</section>
+                                
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-885">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Explore Our Personal Training Services</h2>
+            <p class="cs-text">
+                Discover a range of personalized training options designed to help you achieve your fitness goals effectively and sustainably. Our diverse services cater to different preferences and needs, ensuring you'll find the perfect fit for your journey to a healthier, stronger you.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">1 on 1 Virtual Training</h3>
+                    <p class="cs-item-p">
+                        Experience personalized workouts and expert guidance from the comfort of your home.
+                    </p>
+                    <!--Backgorund Image-->
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/IMG_4965.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/IMG_4965.jpg">
+                        <img loading="lazy" decoding="async" src="images/IMG_4965.jpg" alt="Virtual Training" width="1280" height="568">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">1 on 1 In-Person Training</h3>
+                    <p class="cs-item-p">
+                        Train with Sam in a motivating environment and make significant strides towards your fitness aspirations.
+                    </p>
+                    <!--Backgorund Image-->
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/IMG_4965.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/IMG_4965.jpg">
+                        <img loading="lazy" decoding="async" src="images/IMG_4965.jpg" alt="In-person Training" width="1280" height="568">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Personalized Program Design</h3>
+                    <p class="cs-item-p">
+                     Our 3-month progression, weekly check-ins, and tailored monthly training sessions ensure continuous growth and success.
+                    </p>
+                    <!--Backgorund Image-->
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/IMG_4965.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/IMG_4965.jpg">
+                        <img loading="lazy" decoding="async" src="images/IMG_4965.jpg" alt="Personalized Program Design" width="1280" height="568">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Functional Mobility Treatment</h3>
+                    <p class="cs-item-p">
+                        Sam's expertise will help you move better, feel better, and regain your mobility for an improved quality of life..
+                    </p>
+                    <!--Backgorund Image-->
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/IMG_4965.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/IMG_4965.jpg">
+                        <img loading="lazy" decoding="async" src="images/IMG_4965.jpg" alt="Functional Mobility Treatment" width="1280" height="568">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">See All Our Packages</a>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
+</section>
+  
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-862">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Personal Training Packages</h2>
+            <p class="cs-text">
+                Choose the perfect training package that aligns with your goals and preferences. We offer flexible options to cater to your individual needs, ensuring a personalized fitness journey tailored just for you.
+            </p>
+            <div class="cs-toggle-group">
+                <span id="cs-option1-862" class="cs-plan">Option 1</span>
+                <div class="cs-toggle" aria-label="click to switch plans pricing">
+                    <span aria-hidden="true" class="cs-toggle-switch"></span>
+                </div>
+                <span id="cs-option2-862" class="cs-plan">Option 2</span>
+            </div>
+        </div>
+        <ul class="cs-card-group cs-option1">
+            <li class="cs-item">
+                <div class="cs-top">
+                    <span class="cs-package">1 on 1 Virtual Training</span>
+                    <span class="cs-price">$64</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+            <li class="cs-item cs-popular">
+                <div class="cs-top">
+                    <span class="cs-package">Functional Mobility</span>
+                    <span class="cs-price">$135</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+            <li class="cs-item">
+                <div class="cs-top">
+                    <span class="cs-package">1 on 1 In-Person Training</span>
+                    <span class="cs-price">$89</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+        </ul>
+        <ul class="cs-card-group cs-option2">
+            <li class="cs-item">
+                <div class="cs-top">
+                    <span class="cs-package">Individual</span>
+                    <span class="cs-price">$164</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+            <li class="cs-item cs-popular">
+                <div class="cs-top">
+                    <span class="cs-package">Couples</span>
+                    <span class="cs-price">$235</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li cs-disabled">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+            <li class="cs-item">
+                <div class="cs-top">
+                    <span class="cs-package">Teen</span>
+                    <span class="cs-price">$189</span>
+                    <span class="cs-desc">Per Sesson</span>
+                    <picture class="cs-background">
+                        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2FTopographic.svg" alt="topographic" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        All available starter feature
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Medical service 24/7
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Customer agent service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Professional Service
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        2 dedicated experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                    <li class="cs-li">
+                        Consultation with a Senior experts
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-check.svg" alt="checkmark" width="18" height="18">
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid cs-price-button">Book Appointment</a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+
+
+  <!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-43">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Transformations</span>
+            <h2 class="cs-title">Client Success and Transformations</h2>
+            <p class="cs-text">
+               See the incredible journeys of individuals who have experienced remarkable transformations through Sam's personalized training. Their dedication and hard work have led to impressive results and positive life changes.
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <!-- Image 1 -->
+            <a class="cs-item" href="">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="images/IMG_4986.jpg">
+                    <source media="(min-width: 601px)" srcset="images/IMG_4986.jpg">
+                    <img loading="lazy" decoding="async" src="images/IMG_4986.jpg" alt="fancy house" width="346" height="346">
+                </picture>
+                <!-- Hover Box -->
+                <div class="cs-hover-box">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Transformations#1</h3>
+                    <p class="cs-hover-box-text">
+                        Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
+                    </p>
+                </div>
+            </a>
+            <!-- Image 2 -->
+            <a class="cs-item" href="">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="images/IMG_4986.jpg">
+                    <source media="(min-width: 601px)" srcset="images/IMG_4986.jpg">
+                    <img loading="lazy" decoding="async" src="images/IMG_4986.jpg" alt="modern house" width="346" height="346">
+                </picture>
+                <!-- Hover Box -->
+                <div class="cs-hover-box">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">>Transformations#2</h3>
+                    <p class="cs-hover-box-text">
+                        Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
+                    </p>
+                </div>
+            </a>
+            <!-- Image 3 -->
+            <a class="cs-item" href="">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="images/IMG_4986.jpg">
+                    <source media="(min-width: 601px)" srcset="images/IMG_4986.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/IMG_4986.jpg" alt="modern home at night" width="346" height="346">
+                </picture>
+                <!-- Hover Box -->
+                <div class="cs-hover-box">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/orange-arrow-right.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Transformations#3</h3>
+                    <p class="cs-hover-box-text">
+                        Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
+                    </p>
+                </div>
+            </a>          
+        </div>
+    </div>
+</section>
+                                                                                   
+<!-- ============================================ -->
+<!--                   Blog                       -->
+<!-- ============================================ -->
+
+<section id="blog-844">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Blog</span>
+            <h2 class="cs-title">Latest News & Articles</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy2.jpg" alt="therapy" width="369" height="290">
+                </picture>
+                <div class="cs-item-content">
+                    <span class="cs-date">07 Sep, 2023</span>
+                    <h3 class="cs-h3">How Physical Therapy Can Help You Recover from Surgery</h3>
+                    <p class="cs-item-text">
+                        Physical therapy is often an important part of the recovery process for patients who have undergone surgery.
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-carrot-right.svg" alt="arrow right" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy3.jpg" alt="therapy" width="369" height="290">
+                </picture>
+                <div class="cs-item-content">
+                    <span class="cs-date">07 Sep, 2023</span>
+                    <h3 class="cs-h3">How Physical Therapy Can Help You Recover from Surgery</h3>
+                    <p class="cs-item-text">
+                        Physical therapy is often an important part of the recovery process for patients who have undergone surgery.
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-carrot-right.svg" alt="arrow right" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item cs-featured">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="369" height="290">
+                </picture>
+                <div class="cs-item-content">
+                    <span class="cs-date">07 Sep, 2023</span>
+                    <h3 class="cs-h3">How Physical Therapy Can Help You Recover from Surgery</h3>
+                    <p class="cs-item-text">
+                        Physical therapy is often an important part of the recovery process for patients who have undergone surgery.
+                    </p>
+                    <a href="" class="cs-link">
+                        Read More
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Forange-carrot-right.svg" alt="arrow right" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">View All News</a>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1104">
+    <!-- Subscribe Form -->
+    <div id="cta-1104">
+        <div class="cs-content">
+            <h2 class="cs-title">Subscribe For Newsletter</h2>
+            <form class="cs-form" name="Contact Form" method="post">
+                <input class="cs-input" type="email" id="cs-email-1104" name="find-us" placeholder="Email Address">
+                <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="cs-container">                        
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/FitsbysamoBLK-removebg-preview.png" alt="logo" width="197" height="43">
+            </a>
+            <p class="cs-text">
+                Aenean tincidunt id mauris idology auctor. Donec at ligula lacus. Nulla dig nissimmi quis neque interdum. An Ohio man allegedly punched.
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Quick Links</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Projects</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Privacy Policy</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Categories</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">1 on 1 Virtual Training</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">1 on 1 Mobility Training</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Personalized Program Packages</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Functional Mobility Training</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="tel:123-456-7890">+1 (888) 456 789
+                </a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email" href="mailto:info@randomemail.com">info@randomemail.com</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                    123 Avenue Street<br> Oak Harbor, ON 98101
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">© Copyright 2023 - <a class="cs-copyright-link" href="">Enigma Digital</a></span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/wheels.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/wheels.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/wheels.jpg" alt="wheels" width="1280" height="568">
+    </picture>
+</footer>
+
+                                
+
+
+
+
+
+<script type="text/Javascript" src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
